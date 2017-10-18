@@ -1,0 +1,13 @@
+<h1>Contact</h1>
+<%= form_for(:contact) do |form| %>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <%= form.label :message %>
+    <%= form.text_area :message, cols: 40, rows: 10 %>
+
+    <%= form.submit 'Send Message'%>
+<% end %>
